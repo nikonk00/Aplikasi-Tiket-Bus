@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF2FD"
+    tools:context=".ui.main.mybooking.detail.MybookingDetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:src="@drawable/sp_rectangle_radius_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/montserrat"
+        android:text="My Ticket"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sp_rectangle_radius_6_white"
+        android:padding="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <TextView
+            android:id="@+id/tv_code_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JKT"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_location_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Jakarta"
+            android:fontFamily="@font/montserrat"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_code_from"
+            app:layout_constraintTop_toBottomOf="@+id/tv_code_from" />
+
+        <TextView
+            android:id="@+id/tv_code_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BDG"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_location_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandung"
+            android:fontFamily="@font/montserrat"
+            android:textSize="9sp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_code_to"
+            app:layout_constraintTop_toBottomOf="@+id/tv_code_to" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_location_from"
+            app:layout_constraintEnd_toStartOf="@+id/tv_code_to"
+            app:layout_constraintStart_toEndOf="@+id/tv_code_from"
+            app:layout_constraintTop_toTopOf="@+id/tv_code_from"
+            app:srcCompat="@drawable/ic_from_to" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:background="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_location_from" />
+
+        <TextView
+            style="@style/montserrat.11grey"
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Penumpang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Niko Fernanda"
+            style="@style/montserrat.14Black"
+            app:layout_constraintStart_toStartOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <TextView
+            style="@style/montserrat.11grey"
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tanggal"
+            app:layout_constraintStart_toStartOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="12 April 2020"
+            style="@style/montserrat.14Black"
+            app:layout_constraintStart_toStartOf="@+id/textView29"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <TextView
+            style="@style/montserrat.11grey"
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Armada"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/iv_logo"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/textView31"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            style="@style/montserrat.11grey"
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Nomor Bus"
+            app:layout_constraintStart_toStartOf="@+id/iv_logo"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+        <TextView
+            android:id="@+id/tv_plat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="BD 1111 E"
+            style="@style/montserrat.14Black"
+            app:layout_constraintStart_toStartOf="@+id/textView43"
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+        <TextView
+            style="@style/montserrat.11grey"
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempat Duduk"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+        <TextView
+            android:id="@+id/tv_kursi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A4"
+            style="@style/montserrat.14Black"
+            app:layout_constraintEnd_toEndOf="@+id/textView45"
+            app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+        <TextView
+            style="@style/montserrat.11grey"
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keberangkatan"
+            app:layout_constraintEnd_toEndOf="@+id/tv_kursi"
+            app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 WIB"
+            style="@style/montserrat.14Black"
+            app:layout_constraintEnd_toEndOf="@+id/textView47"
+            app:layout_constraintTop_toTopOf="@+id/tv_date" />
+
+        <TextView
+            style="@style/montserrat.11grey"
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            app:layout_constraintEnd_toEndOf="@+id/tv_time"
+            app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/tv_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer bank"
+            style="@style/montserrat.14Black"
+            app:layout_constraintEnd_toEndOf="@+id/textView49"
+            app:layout_constraintTop_toTopOf="@+id/iv_logo" />
+
+        <TextView
+            style="@style/montserrat.11grey"
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor booking"
+            app:layout_constraintEnd_toEndOf="@+id/tv_trans"
+            app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+        <TextView
+            android:id="@+id/tv_booking"
+            style="@style/montserrat.14Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567"
+            app:layout_constraintEnd_toEndOf="@+id/textView51"
+            app:layout_constraintTop_toTopOf="@+id/tv_plat" />
+
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="27dp"
+            android:background="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_plat" />
+
+        <ImageView
+            android:id="@+id/iv_barcode"
+            android:layout_width="0dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="27dp"
+            app:layout_constraintEnd_toEndOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="@+id/view4"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

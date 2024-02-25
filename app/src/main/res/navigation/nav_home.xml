@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@+id/fragmentPilihBus">
+
+    <fragment
+        android:id="@+id/fragmentPilihBus"
+        android:name="com.example.asdadvance.ui.main.home.choice.bus.PilihBusFragment"
+        tools:layout="@layout/fragment_pilih_bus" >
+
+        <action android:id="@+id/action_pilih_kursi"
+            app:destination="@+id/fragmentPilihKursi"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentPilihKursi"
+        android:name="com.example.asdadvance.ui.main.home.choice.tiket.PilihKursiFragment"
+        tools:layout="@layout/fragment_pilih_kursi" >
+
+        <action android:id="@+id/action_personal_info"
+        app:destination="@+id/fragmentPersonalInfo"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentPersonalInfo"
+        android:name="com.example.asdadvance.ui.main.home.choice.info.PersonalInfoFragment"
+        tools:layout="@layout/fragment_personal_info" >
+
+        <action android:id="@+id/action_success"
+            app:destination="@+id/fragmentSuccess"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSuccess"
+        android:name="com.example.asdadvance.ui.main.home.choice.success.SuccessFragment"
+        tools:layout="@layout/fragment_success" />
+
+
+</navigation>

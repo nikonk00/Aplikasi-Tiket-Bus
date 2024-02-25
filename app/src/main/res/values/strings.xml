@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BusTravel</string>
+    <string name="title_activity_auth">AuthActivity</string>
+    <string name="tab_text_1">Login</string>
+    <string name="tab_text_2">Register</string>
+    <string name="silahkan_login">Silahkan login untuk mulai menggunakan\nsemua fitur di aplikasi ini</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
